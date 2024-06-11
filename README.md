@@ -7,7 +7,6 @@
 - Designed to assist doctors, the system uses Support Vector Machines (SVM) for accurate disease prediction, enhancing the efficiency and reliability of diagnoses. 
 - This application aims to support busy doctors by providing insights derived from medical datasets, helping them make informed decisions about patient care.
 
-
 ## Features
 
 - User-friendly interface for data input
@@ -19,16 +18,11 @@
 
 ### Front End
 
-- HTML
-- CSS
-- JavaScript
-- jQuery
+- HTML, CSS, JavaScript, jQuery
 
 ### Back End
 
-- Django
-- Python
-- PostgreSQL
+Django, Python, PostgreSQL
 
 ### Libraries
 
@@ -84,4 +78,11 @@
 
 8. **Access the application:**
    - Open your web browser and navigate to `http://127.0.0.1:8000/`
+  
+## Contributors
 
+Sujan Gautam
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
