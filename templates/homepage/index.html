@@ -1,0 +1,225 @@
+﻿{% extends "basic.html" %}
+{% load static %}
+
+
+{% block head %}
+
+
+{% endblock %}
+
+
+
+
+{% block body %}
+
+
+
+<div class="jumbotron">
+  <h1 class="display-4">Get Smart Health Assistance</h1>
+  <p class="lead">
+    'Health is Wealth!'
+    New technologies have influenced many parts of our daily life. Today’s healthcare system has also recognized the
+    advantages of using Information and Communication Technology (ICT) to improve the quality of healthcare, turning
+    traditional into smart healthcare.
+    Smart Health Prediction System is a web application that is capable of identifying
+    the diseases through the symptoms.
+    It is solely related to better treatmnet of patients by identifying the disease of the patients that improve the
+    quality of life for anyone and everyone.
+
+
+
+    {% if user.is_authenticated %}
+
+
+    {% else %}
+
+  <p class="lead">
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bd-example-modal-lg">Get
+      started</button>
+  </p>
+
+
+</div>
+
+<br>
+<div class="container mt-5 mb-3">
+  <center>
+    <h1>Log-In As</h1>
+  </center>
+  <form>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col">
+          <a href="{% url 'sign_in_admin' %}">
+            <img alt="admin" src="{% static 'homepage/admin2.png' %}" class="img">
+          </a>
+        </div>
+
+        <div class="col">
+          <!-- <a href="{% url 'sign_in_doctor' %}">
+      <img  alt="doctor" src="{% static 'homepage/people.png' %}"  class="img">
+      </a> -->
+        </div>
+
+        <div class="col">
+          <a href="{% url 'sign_in_doctorr' %}">
+            <img alt="doctorr" src="{% static 'homepage/people.png' %}" class="img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+{% endif %}
+
+<br><br>
+
+
+
+
+<!-- Large modal -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <center>
+        <h1>Login As</h1>
+      </center>
+      <br><br>
+
+      <center>
+        <form>
+          <div class="container mt-5 mb-5">
+            <div class="row">
+              <div class="col">
+                <a href="{% url 'sign_in_admin' %}">
+                  <img alt="admin" src="{% static 'homepage/admin2.png' %}" class="img">
+                </a>
+              </div>
+
+              <div class="col">
+                <!-- <a href="{% url 'sign_in_doctor' %}">
+<img  alt="doctor" src="{% static 'homepage/doctor.png' %}"  class="img">
+</a> -->
+              </div>
+
+              <div class="col">
+                <a href="{% url 'sign_in_doctorr' %}">
+                  <img alt="doctorr" src="{% static 'homepage/people.png' %}" class="img">
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </center>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Large modal -->
+
+<div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <center>
+        <h1>Register As</h1>
+      </center>
+      <br><br>
+
+      <center>
+        <form>
+          <div class="container mt-5 mb-5 ml-5 mr-5">
+            <div class="row">
+
+              <div class="col">
+                <!-- <a href="{% url 'signup_doctor' %}">
+<img  alt="doctor" src="{% static 'homepage/doctor.png' %}"  class="img">
+</a> -->
+              </div>
+
+              <div class="col">
+                <a href="{% url 'signup_doctorr' %}">
+                  <img alt="doctorr" src="{% static 'homepage/people.png' %}" class="img">
+                </a>
+              </div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </form>
+      </center>
+    </div>
+  </div>
+</div>
+
+
+<br><br><br><br>
+<center>
+  <h2>Health Workers</h2>
+</center>
+<div class="row mt-5 mb-5">
+  <div class="col">
+    <div class="card">
+      <div class="card-body text-center">
+        <img alt="admin" src="{% static 'homepage/healthWorker.jpg' %}" width="400" height="250" class="rounded">
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body text-center">
+        <img alt="admin" src="{% static 'homepage/healthWorker4.jpg' %}" width="400" height="250" class="rounded">
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body text-center">
+        <img alt="admin" src="{% static 'homepage/healthWorker5.jpg' %}" width="400" height="250" class="rounded">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br><br><br><br>
+
+<div id="footer" class="card text-white" style="background-color: #007bff;">
+  <div class="card-body">
+    <div class="footer-copyright text-center"> Copyright &copy; 2021, All Rights Reserved
+      <a href="#" style="color: black;"> Smart Health Prediction</a>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+{% endblock %}
